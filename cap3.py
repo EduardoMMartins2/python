@@ -71,3 +71,42 @@ too_expensive = 'ducati'
 motocicletas.remove(too_expensive)
 print(motocicletas)
 print(f'\nA {too_expensive.title()} is too expensive for me.')
+
+
+#Ordenando Permanente
+cars = ['bmw', 'audi', 'toyota', 'subaru']
+cars.sort()
+print(cars)
+#ordem reversa
+cars_2 = ['bmw', 'audi', 'toyota', 'subaru']
+cars_2.sort(reverse=True)
+print(cars_2)
+
+#Ordenando temporariamente
+cars_3 = ['bmw', 'audi', 'toyota', 'subaru']
+print("Here is the original list:")
+print(cars_3)
+
+print("\nHere is the sorted list:")
+print(sorted(cars_3))
+
+print("\nHere is the original list again:")
+print(cars_3)
+#Ordenar sempre depois de minúsculas, maiúsculas perdem o contexto
+
+#Exibindo uma lista em ordem inversa - não é ordem alfabética, apenas transforma a lista do último para o primeiro
+cars_4 = ['bmw', 'audi', 'toyota', 'subaru']
+print(cars_4)
+#altera permanente
+cars_4.reverse()
+print(cars_4)
+
+#Identificando o tamanho da lista - len() - começa contando de 1 e não 0
+print(len(cars_4))
+
+
+#Evite erros de índice ao trabalhar com listas
+#Ver a lista original ou números de elementos ajuda a resolver erros. Pode ser q sua lista tenha sido manipulada dinamicamente em algum passo
+#erro: list index out of range
+teste_erro = ['elemento um', 'elemento dois']
+#print(teste_erro[3])

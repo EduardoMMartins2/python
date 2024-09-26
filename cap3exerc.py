@@ -71,3 +71,28 @@ print(f'Pow, tu vai vir né {convidados[-1].title()}?')
 del convidados[0]
 del convidados[0]
 print(convidados)
+
+# 3.8
+games = ['Far Cry', 'GTA', 'Need For Speed', 'PES', 'Lolzinho']
+print(games)
+print(sorted(games))
+print(games)
+print(f'separaaaaaaaaaaa')
+games.reverse()
+print(games)
+games.reverse()
+print(games)
+print(f'separaaaaaaaaaaa')
+games.sort()
+print(games)
+print(f'separaaaaaaaaaaa')
+games.sort(reverse=True)
+print(games)
+
+# 3.9
+print(len(convidados))
+
+# 3.11
+teste_erro = ['elemento um', 'elemento dois']
+#print(teste_erro[3])
+print(teste_erro[1])
