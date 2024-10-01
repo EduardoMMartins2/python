@@ -69,3 +69,69 @@ magicians = ['alice', 'david', 'carolina']
 #for magician in magicians      - erro - sytaxerror: expected ':'
 for magician in magicians:
     print(magician)
+
+
+# Listas Numéricas
+#Função Range - gera uma série de números - atencao os resultados serão apénas uma sequencia de números
+for value in range(1,5):
+    print(f"{value}\n")
+#o range faz calcular começando do primeiro valor fornecido e parando no segundo valor fornecido
+
+for value in range(1,6):
+    print(value)
+print(f"\n")
+
+for value in range(6):
+    print(value)
+print(f"\n")
+
+#Usando range() para criar uma lista de números - basta envolver range() em um list()
+numbers = list(range(1,6))
+print(numbers)
+
+#Se passarmos um terceiro argumento para a funcao range(), esse argumento será o "step", e usará como tamanho do "passo" ou intervalo
+even_numbers = list(range(2,11,2))
+print(even_numbers)
+print(f"\n")
+
+#inserir os 10 primeiros números quadrados em uma lista
+#começa uma lista vazia
+squares = []
+#percorre o python de 1 a 10
+for value in range(1,11):
+    #eleva o valor de cada elemento do loop a segunda potencia
+    square = value ** 2
+    #atribui a variável lista square
+    squares.append(square)
+
+print(squares)
+
+#a mesma coisa  q em cima, porém, código clean
+squares = []
+for value in range(1,11):
+    squares.append(value ** 2)
+
+print(squares)
+print(f"\n\n")
+
+
+#Estatísticas Simples com uma lista de números
+digits = []
+for digit in range(0,10):
+    digits.append(digit)
+
+print(digits)
+print(min(digits))
+print(max(digits))
+print(sum(digits))
+print(f"\n\n")
+
+
+#LIST COMPREHENSIONS - gera uma lista de códigos somente em uma linha de código - combina loop e criação de elementos em uma linha
+#abre a lista [colchetes], defina a expressão q eleve ao quadrado, escreva o loop for para gerar os números - não tem 2 pontos no final da expressao
+squares = [value ** 2 for value in range(1,11)]
+# lista = []
+# expressao = value ** 2
+# loop = for value in range(1,11)
+print(squares)
+
