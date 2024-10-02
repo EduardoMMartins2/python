@@ -57,3 +57,49 @@ cubos_comprehensions = [numero ** 3 for numero in range(1,11)]
 print(cubos_comprehensions)
 
 print(f"\n\n")
+
+# 4.10
+animais2 = ['gato', 'tigre', 'onça', 'cachorro', 'arara']
+
+print(f"Os três primeiros elmentos da lista são:")
+print(animais2[:3])
+print(f"Os três elementos da metade na lista são:")
+# (len(animais2)-1) = 4 penultimo elemento da lista
+print(animais2[1: (len(animais2)-1) ])
+print(f"Os três últimos elmentos da lista são:")
+print(animais2[-3:])
+
+
+
+print(f"\n\nExercicio 4.11")
+# 4.11
+novosSabores = sabores[:]
+print(sabores)
+novosSabores.append('gorgonzola')
+sabores.append('file')
+
+print(f"Minhas pizzas favoritas são: ")
+for pizza in sabores:
+    print(pizza)
+print(f"Minhas novas pizzas favoritas são: ")
+for pizzaNova in novosSabores:
+    print(pizzaNova)
+
+
+print(f"\n\nExercício 4.12")
+# 4.12
+my_foods = ['pizza', 'falafel', 'carrot cake']
+friend_foods = my_foods[:]
+
+my_foods.append('cannoli')
+friend_foods.append('ice cream')
+
+print('My favorite food are: ')
+for food in my_foods:
+    print(food.title())
+
+print(f"\nMy friend's favorite foods are:")
+for food1 in friend_foods:
+    print(food1.title())
+# food1 = [food1 for food1 in friend_foods] - list comprehension, mas n eh isso q o exercicio pede
+#print(food1)

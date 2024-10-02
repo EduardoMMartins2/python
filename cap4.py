@@ -135,3 +135,54 @@ squares = [value ** 2 for value in range(1,11)]
 # loop = for value in range(1,11)
 print(squares)
 
+print(f"\n\n")
+
+
+#Trabalhando com uma parte da lista
+#Fatiando uma Lista
+players = ['Grohe', 'Geromel', 'Kannemann', 'Edilson', 'Cortez']
+print(players[0:3])
+
+print(players[1:4]) #pula o primeiro elemento  - o zero
+print(f"\n")
+print(players[:4]) #começa do início da lista
+print(players[2:]) #começa do elemento start até o final da lista
+print(players[-3:]) # últimos 3 jogadores da lista - índice negativo retorna um elemento a uma certa distancia do final
+# é possível colocar o terceiro elemento nos colchetes, indicará qnts elementos o python deve desconsiderar
+print(f"\n")
+
+
+# Percorrendo uma Fatia em Loop
+print('Here are the first three players on my team: ')
+for player in players[:3]:
+    print(player.title())
+
+print(f"\n")
+
+# Copiando uma lista
+lanches_meus = ['pizza', 'xis', 'lasanha']
+lanches_outros = lanches_meus[:]
+
+lanches_meus.append('coca-cola')
+lanches_outros.append('sorvete')
+
+print('Meu lanche favorito é:')
+print(lanches_meus)
+print('\nOs lanches favoritos dos meus amigos são:')
+print(lanches_outros)
+
+print(f"\n")
+# caso eu atribua uma lista a outra lista, ao incluir elementos na lista A, também incluiremos na lista B e como estamos atribuindo B = A, logo, o elemento adicionado apenas a B também aparecerá em A
+my_foods = ['pizza', 'xis', 'lasanha']
+friend_foods = my_foods
+
+my_foods.append('coca-cola')
+friend_foods.append('sorvete')
+
+print('Meu lanche favorito é:')
+print(my_foods)
+print('\nOs lanches favoritos dos meus amigos são:')
+print(friend_foods)
+
+
+#Tuplas - PG 102 são listas imutáveis - listas que não podem mudar são tuplas
