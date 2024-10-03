@@ -103,3 +103,16 @@ for food1 in friend_foods:
     print(food1.title())
 # food1 = [food1 for food1 in friend_foods] - list comprehension, mas n eh isso q o exercicio pede
 #print(food1)
+
+
+print(f" \n\nExercício 4.13")
+# 4.13
+basicas = ('arroz', 'feijao', 'farofa', 'alface', 'carne')
+for basico in basicas:
+    print(basico.title())
+
+#basicas[1] = 'lentilha'
+
+print(basicas)
+basicas = ('arroz', 'lentilha', 'batata', 'alface', 'carne')
+print(basicas)

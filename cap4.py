@@ -185,4 +185,32 @@ print('\nOs lanches favoritos dos meus amigos são:')
 print(friend_foods)
 
 
+print(f"\n\n")
 #Tuplas - PG 102 são listas imutáveis - listas que não podem mudar são tuplas
+#Definindo uma Tupla - se usa parenteses
+dimensions = (200,50)
+print(dimensions[0])
+print(dimensions[1])
+
+#   dimensions(200,50)      - exibirá erro - não podemos atribuir um valor novo a um elemento em uma tupla
+#   dimensions[0] = 250
+
+tupla_unica = (3,)
+print(tupla_unica)
+
+#Percorrendo todos os valores em uma tupla com um loop
+dimensions = (200, 50)
+for dimension in dimensions:
+    print(dimension)
+
+#Sobrescrevendo uma tupla - é a única forma de redefinir uma tupla, ou trocar os valores, é sobrescrevendo a tupla
+dimensions = (200,50)
+print("Original dimensions: ")
+for dimension in dimensions:
+    print(dimension)
+
+dimensions = (400, 100)
+print("\nModified dimensions: ")
+for dimension in dimensions:
+    print(dimension)
+
