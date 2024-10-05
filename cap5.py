@@ -139,3 +139,44 @@ elif age < 65:
 else:
     price = 20
 print(f'Your admission cost is ${price}')
+
+
+print(f'\nOmitindo o bloco Else')
+#o python não requer o bloco else
+age = 12
+if age < 4:
+    price = 0
+elif age < 18:
+    price = 25
+elif age < 65:
+    price = 40
+elif age >= 65:
+    price = 20
+print(f'Your admission cost is ${price}.')
+
+
+print(f'\nTestando Múltiplas Condições')
+#assim q processa um teste e passa no teste, ignora os outros
+requested_topping = ['calabresa', 'queijo']
+
+if 'calabresa' in requested_topping:
+    print('Adiciona calabresa.')
+if 'peperoni' in requested_topping:
+    print('Adiciona peperoni.')
+if 'queijo' in requested_topping:
+    print('Adiciona queijo.')
+
+print(f'Finished making your pizza!')
+
+#esse código irá parar após a primeira execução retornar true
+requested_topping = ['calabresa', 'queijo']
+if 'calabresa' in requested_topping:
+    print('Adiciona calabresa.')
+elif 'peperoni' in requested_topping:
+    print('Adiciona peperoni.')
+elif 'queijo' in requested_topping:
+    print('Adiciona queijo')
+print('Finished making your pizza!')
+#caso queira apenas 1 bloco de código executado, use uma sequencia if-elif-else
+#se quer executar mais de um bloco de código, use if independentes
+
