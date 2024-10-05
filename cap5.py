@@ -180,3 +180,61 @@ print('Finished making your pizza!')
 #caso queira apenas 1 bloco de código executado, use uma sequencia if-elif-else
 #se quer executar mais de um bloco de código, use if independentes
 
+
+print(f'\n\nUsando instruções if com listas')
+#Verificando Elementros Especiais
+requested_toppings = ['mushrooms', 'green peppers', 'extra cheese']
+
+for requested_topping in requested_toppings:
+    print(f'Additing {requested_topping}.')
+print('\nFinished making your pizza!')
+
+#E se ficar sem pimentao?
+requested_toppings = ['mushrooms', 'green peppers', 'extra cheese']
+
+
+#para cada ingrediente na lista de ingredientes:
+for requested_topping in requested_toppings:
+    #se o ingrediente for igual a pimentão
+    if requested_topping == 'green peppers':
+        #retorna isso se for = pimentao
+        print('Sorry, we are out of green peppers right now.')
+    #se não, retorna isso
+    else:
+        print(f'Additing {requested_topping}.')
+print('\nFinished making your pizza!')
+
+
+##Verificando a lista não está vazia
+print(f'\n')
+requested_toppings = []
+#requested_toppings = ['mushrooms', 'green peppers', 'extra cheese']
+#se a lista está no if, o python retorna true caso tenha 1 elemento na lista
+if requested_toppings:
+    for requested_topping in requested_toppings:
+        print(f'Adding {requested_topping}.')
+    print("Finished making your pizza!")
+else:
+    print('Are you sure you want a plain pizza?')
+
+
+print(f'\n')
+#Usando múltiplas listas
+ingredientes_disponiveis = ['cogumelo', 'azeitona', 'pimentao', 'peperoni',
+                            'pepino', 'queijo']
+requisicoes = ['cogumelo', 'batata frita', 'queijo']
+
+#hipoteticamente, eu quero que ele vá item a item das requisicoes e veja se tem 
+# na lista de ingredientes disponíveis
+#para cada requisicao na lista de requisicoes:
+for requisicao in requisicoes:
+    #se a requisicao esta na lista de ingredientes disponiveis
+    if requisicao in ingredientes_disponiveis:
+        print(f'Adiciona {requisicao}')
+    #se não, desculpa
+    else:
+        print(f'Desculpa, mas não temos {requisicao}.')
+
+print(f'Finalizando sua pizza!')
+
+
